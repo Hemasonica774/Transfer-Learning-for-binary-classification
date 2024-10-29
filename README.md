@@ -48,7 +48,7 @@ def train_val_datasets():
     validation_dataset = tf.keras.utils.image_dataset_from_directory( 
         directory='/content/validation-horse-or-human.zip',
         batch_size=32,
-        image_size=(150,150),
+        image_size=(150,150), 
         shuffle=True, 
         seed=7 
     ) 
@@ -286,3 +286,4 @@ plt.show()
 ## RESULT
 
 Thus, transfer learning for classifying horses and human is implemented successfully
+
